@@ -24,5 +24,8 @@ set sql_safe_updates=1;
 ```python
 1. 	queryset.values(a).annotate(b=sum(num))  
     a为group by字段，b为聚合字段，最后显示a和b字段。
+    
+2.select_related()
+作用：在对QuerySet使用select_related()函数后，Django会获取相应外键对应的对象，从而在之后需要的时候不必再查询数据库了。
 ```
 
