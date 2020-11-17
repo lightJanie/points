@@ -17,6 +17,12 @@ set sql_safe_updates=1;
  rows=[{'frame':'Brian','lname':'Jones','uid':1003},...]
  from operator import itemgetter
  rows_by_frame=sorted(rows,key=itemgetter('fname'))
+    
+3.元组转字典
+>>> myset=((1,'draft'),(2,'start'),(3,'end'))
+>>> mydic=dict(myset)
+>>> mydic
+{1: 'draft', 2: 'start', 3: 'end'}
 ```
 
 ## Django
@@ -27,5 +33,12 @@ set sql_safe_updates=1;
     
 2.select_related()
 作用：在对QuerySet使用select_related()函数后，Django会获取相应外键对应的对象，从而在之后需要的时候不必再查询数据库了。
+```
+
+## vscode
+
+```python
+1.换行快捷键 ctrl+enter
+2.格式化文档 shift+alt+F
 ```
 
